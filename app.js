@@ -5,19 +5,19 @@ const buttonReset = document.getElementById('btn-reset');
 let i = 0;
 function add() {
   i++;
-  compteur.innerText = i;
+  compteur.innerHTML = i;
 }
 
 function remove() {
   if (i > 0) {
     i--;
-    compteur.innerText = i;
+    compteur.innerHTML = i;
   }
 }
 
 function reset() {
   i = 0;
-  compteur.innerText = i;
+  compteur.innerHTML = i;
 }
 
 btnAdd.addEventListener('click', add);
